@@ -3,10 +3,12 @@ const gameEngine = new GameEngine();
 const ASSET_MANAGER = new AssetManager();
 
 // sprite sheets
-ASSET_MANAGER.queueDownload("./assets/Gunner_Green_Idle.png");
-ASSET_MANAGER.queueDownload("./assets/Gunner_Green_Run.png");
-ASSET_MANAGER.queueDownload("./assets/Gunner_Green_Jump.png");
-ASSET_MANAGER.queueDownload("./assets/Gunner_Green_Death.png");
+
+// ASSET_MANAGER.queueDownload("./assets/Gunner_Green_Idle.png");
+// ASSET_MANAGER.queueDownload("./assets/Gunner_Green_Run.png");
+// ASSET_MANAGER.queueDownload("./assets/Gunner_Green_Jump.png");
+// ASSET_MANAGER.queueDownload("./assets/Gunner_Green_Death.png");
+ASSET_MANAGER.queueDownload("./assets/Gunner.png");
 ASSET_MANAGER.queueDownload("./assets/Shadow.png");
 ASSET_MANAGER.queueDownload("./assets/MuzzleFlash.png");
 
