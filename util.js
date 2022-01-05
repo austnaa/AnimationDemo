@@ -1,5 +1,9 @@
 /** Global Parameters Object */
-const params = { };
+const PARAMS = {
+    DEBUG: false,
+    SCALE: 4,
+    BITWIDTH: 48
+};
 
 /** Easy access to math functions */
 const {
