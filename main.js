@@ -11,6 +11,7 @@ const ASSET_MANAGER = new AssetManager();
 ASSET_MANAGER.queueDownload("./assets/Gunner.png");
 ASSET_MANAGER.queueDownload("./assets/Shadow.png");
 ASSET_MANAGER.queueDownload("./assets/MuzzleFlash.png");
+ASSET_MANAGER.queueDownload("./assets/Background.png");
 
 ASSET_MANAGER.downloadAll(() => {
 	var gameEngine = new GameEngine();
@@ -19,6 +20,7 @@ ASSET_MANAGER.downloadAll(() => {
 
 	var canvas = document.getElementById('gameWorld');
 	var ctx = canvas.getContext('2d');
+	ctx.imageSmoothingEnabled = false
 
 	PARAMS.CANVAS_WIDTH = canvas.width;
 	PARAMS.CANVAS_HEIGHT = canvas.height;
