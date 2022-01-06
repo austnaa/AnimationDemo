@@ -4,11 +4,14 @@ const ASSET_MANAGER = new AssetManager();
 
 // sprite sheets
 
-// ASSET_MANAGER.queueDownload("./assets/Gunner_Green_Idle.png");
-// ASSET_MANAGER.queueDownload("./assets/Gunner_Green_Run.png");
-// ASSET_MANAGER.queueDownload("./assets/Gunner_Green_Jump.png");
-// ASSET_MANAGER.queueDownload("./assets/Gunner_Green_Death.png");
+
 ASSET_MANAGER.queueDownload("./assets/Gunner.png");
+ASSET_MANAGER.queueDownload("./assets/Hammer.png");
+ASSET_MANAGER.queueDownload("./assets/Entry.png");
+ASSET_MANAGER.queueDownload("./assets/Money.png");
+ASSET_MANAGER.queueDownload("./assets/RoofScreen.png");
+ASSET_MANAGER.queueDownload("./assets/Screen.png");
+ASSET_MANAGER.queueDownload("./assets/Transporter.png");
 ASSET_MANAGER.queueDownload("./assets/Shadow.png");
 ASSET_MANAGER.queueDownload("./assets/MuzzleFlash.png");
 ASSET_MANAGER.queueDownload("./assets/Background.png");
@@ -20,7 +23,7 @@ ASSET_MANAGER.downloadAll(() => {
 
 	var canvas = document.getElementById('gameWorld');
 	var ctx = canvas.getContext('2d');
-	ctx.imageSmoothingEnabled = false
+	ctx.imageSmoothingEnabled = false;
 
 	PARAMS.CANVAS_WIDTH = canvas.width;
 	PARAMS.CANVAS_HEIGHT = canvas.height;
