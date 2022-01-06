@@ -1,5 +1,5 @@
 class Gunner {
-    constructor(game, x, y, w) {
+    constructor(game, x, y) {
         Object.assign(this, { game, x, y});
 
         this.spritesheet = ASSET_MANAGER.getAsset("./assets/Gunner.png");

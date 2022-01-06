@@ -2,9 +2,6 @@ const gameEngine = new GameEngine();
 
 const ASSET_MANAGER = new AssetManager();
 
-// sprite sheets
-
-
 ASSET_MANAGER.queueDownload("./assets/Gunner.png");
 ASSET_MANAGER.queueDownload("./assets/Hammer.png");
 ASSET_MANAGER.queueDownload("./assets/Entry.png");
@@ -34,5 +31,3 @@ ASSET_MANAGER.downloadAll(() => {
 
 	gameEngine.start();
 });
-
-
